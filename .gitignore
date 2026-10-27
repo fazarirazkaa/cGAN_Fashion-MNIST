@@ -1,0 +1,25 @@
+# Byte-compiled / cache Python & Gradio
+__pycache__/
+*.py[cod]
+*$py.class
+.gradio/
+.ipynb_checkpoints/
+.virtual_documents/
+
+# Dataset mentah (otomatis diunduh saat notebook dijalankan; tidak dibutuhkan untuk menjalankan demo)
+data/
+*.npz
+*-ubyte
+*-ubyte.gz
+
+# Checkpoint training besar (berisi state optimizer & discriminator; demo hanya butuh generator*.pth)
+models/ckpt.pth
+models/checkpoint_*.pth
+
+# File environment & OS
+.env
+.venv/
+venv/
+.DS_Store
+Thumbs.db
+
