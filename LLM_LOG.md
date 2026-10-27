@@ -1,5 +1,7 @@
 # Log Pengembangan & Penyelesaian Masalah (LLM_LOG.md)
 
+> **Catatan**: Untuk dokumentasi log interaksi yang mengikuti **Template Resmi Rubrik Penilaian** (*Tahap Inisiasi $\rightarrow$ Tahap Penanganan Eror / Debugging $\rightarrow$ Tahap Optimasi* per modul beserta cuplikan prompt, pesan error konsol, dan kode solusi), silakan lihat **[`LOG_INTERAKSI_LLM.md`](LOG_INTERAKSI_LLM.md)**.
+
 | No | Langkah / Prompt | Hasil | Error / Kendala | Perbaikan |
 |---:|---|---|---|---|
 | 1 | Cek GPU (`cuda:0`), siapkan folder `/kaggle/working/{models,outputs,app}`, muat Fashion-MNIST | GPU `Tesla T4` (14.56 GB VRAM) terdeteksi; 60.000 data train & 10.000 data test dimuat dengan normalisasi `[-1, 1]` dan `batch_size=128` | Antisipasi jika internet mati saat `FashionMNIST(download=True)` dijalankan | Menambahkan kelas fallback `CSVFashionMNIST` yang mencari CSV di `/kaggle/input` lewat `os.walk` dan me-reshape 784 piksel ke `1x28x28` |

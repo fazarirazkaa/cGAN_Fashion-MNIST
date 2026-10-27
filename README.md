@@ -6,6 +6,17 @@ Proyek ini mengimplementasikan, melatih, dan membandingkan dua strategi *conditi
 
 ---
 
+## Anggota Kelompok & Pembagian Peran (Job Desk)
+
+| No | Nama Anggota | Peran (Role) | Tanggung Jawab Modul & Integrasi |
+|---:|---|---|---|
+| 1 | **Fazari Razka Davira** | **Prompt Engineer & LLM Navigator (Ketua)** | Perancangan strategi *prompting* bertahap, desain arsitektur Generator & Discriminator (Varian A `embedding-concat` vs Varian B `one-hot-concat`), serta integrasi aplikasi web demo Gradio (`app/demo.py`). |
+| 2 | **Mahardika Naufal** | **Data Pipeline & Preprocessing Engineer** | Inisiasi lingkungan GPU Kaggle (`cuda:0`), pemuatan dataset Fashion-MNIST (`60.000` train / `10.000` test), normalisasi tensor `[-1, 1]`, implementasi fallback `CSVFashionMNIST`, dan visualisasi data asli (`outputs/sample_real.png`). |
+| 3 | **Arya Raka Syahputra** | **Training Loop & Hyperparameter Tuning Engineer** | Implementasi *smoke test* 2 epoch, siklus pelatihan adversarial 30 epoch (Varian A & B) dengan *one-sided label smoothing* (`0.9`), sistem *checkpoint/resume*, evaluasi `FashionCNN` & `Fashion-FID`, serta eksperimen optimasi 50 epoch (`lr_D=1e-4`, tambahan `BatchNorm2d`). |
+| 4 | **Galih Anggito Abimanyu** | **Lead Documentarian & Error Handler** | Penanganan *debugging* lintas-modul (resolusi dimensi *concatenation* 2D, stabilisasi numerik matriks kovarians FID, dan determinisme RNG Box-Muller SIMD antara `final_grid` & `demo.py`), serta penyusunan dokumentasi [`ANALISIS.md`](ANALISIS.md), [`LLM_LOG.md`](LLM_LOG.md), dan [`LOG_INTERAKSI_LLM.md`](LOG_INTERAKSI_LLM.md). |
+
+---
+
 ## Ringkasan Hasil Eksperimen (GPU Kaggle `Tesla T4`)
 
 | Metrik Evaluasi | Varian A (`embedding-concat`) | Varian B (`one-hot-concat`) | Selisih (`A - B`) |
@@ -20,7 +31,7 @@ Proyek ini mengimplementasikan, melatih, dan membandingkan dua strategi *conditi
 | **Fashion-FID (Lebih Rendah = Lebih Baik)** | **`3.63`** | **`3.36`** | **`+0.27`** |
 | **Verifikasi Demo vs `final_grid` (Seed 42)** | `Max Diff = 0` (`MSE = 0.0`) | `Max Diff = 0` (`MSE = 0.0`) | `100% Identik` |
 
-Detail analisis lengkap tersedia di [`ANALISIS.md`](ANALISIS.md) dan catatan eksperimen di [`LLM_LOG.md`](LLM_LOG.md).
+Detail analisis lengkap tersedia di [`ANALISIS.md`](ANALISIS.md), tabel ringkasan log di [`LLM_LOG.md`](LLM_LOG.md), serta **Log Interaksi LLM sesuai Template Rubrik Penilaian** di **[`LOG_INTERAKSI_LLM.md`](LOG_INTERAKSI_LLM.md)**.
 
 ---
 
