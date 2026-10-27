@@ -1,0 +1,23 @@
+{
+  "id": "fazarirazkadavira/fashion-mnist-cgan-tubes-genai",
+  "title": "Fashion MNIST cGAN Tubes GenAI",
+  "code_file": "fashion_mnist_cgan.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [
+    "gpu",
+    "pytorch",
+    "gan"
+  ],
+  "dataset_sources": [
+    "zalando-research/fashionmnist"
+  ],
+  "competition_sources": [],
+  "kernel_sources": [],
+  "model_sources": [],
+  "machine_shape": "NvidiaTeslaT4"
+}

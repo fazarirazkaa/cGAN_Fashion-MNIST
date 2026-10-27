@@ -1,0 +1,47 @@
+{
+  "gpu_name": "Tesla T4",
+  "gpu_vram_gb": 14.56,
+  "smoke_test_sec_per_epoch": 7.37,
+  "time_A_sec": 234.35,
+  "time_B_sec": 254.08,
+  "cnn_real_test_acc_pct": 93.21,
+  "total_acc_A_pct": 90.81,
+  "total_acc_B_pct": 92.16,
+  "acc_per_class_A": {
+    "T-shirt/top": 90.9,
+    "Trouser": 99.9,
+    "Pullover": 83.2,
+    "Dress": 96.1,
+    "Coat": 78.0,
+    "Sandal": 98.5,
+    "Shirt": 70.5,
+    "Sneaker": 96.3,
+    "Bag": 99.4,
+    "Ankle boot": 95.3
+  },
+  "acc_per_class_B": {
+    "T-shirt/top": 90.2,
+    "Trouser": 100.0,
+    "Pullover": 83.8,
+    "Dress": 97.5,
+    "Coat": 83.9,
+    "Sandal": 98.0,
+    "Shirt": 73.1,
+    "Sneaker": 98.9,
+    "Bag": 98.7,
+    "Ankle boot": 97.5
+  },
+  "fid_A": 3.63,
+  "fid_B": 3.36,
+  "tuned_50ep_acc_pct": 92.19,
+  "tuned_50ep_fid": 2.67,
+  "demo_check": {
+    "eval_mode_A": true,
+    "eval_mode_B": true,
+    "max_pixel_diff_A": 0,
+    "max_pixel_diff_B": 0,
+    "mse_A": 0.0,
+    "mse_B": 0.0,
+    "gradio_share_url": "https://bf4271ccf995b117c3.gradio.live"
+  }
+}
