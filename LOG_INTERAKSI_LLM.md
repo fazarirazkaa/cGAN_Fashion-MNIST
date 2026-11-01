@@ -81,7 +81,9 @@ LOG INTERAKSI LLM - KELOMPOK [FashionGAN]
 LOG INTERAKSI LLM - KELOMPOK [FashionGAN]
 • Tanggal Sesi: 21/10/2026
 • Target Modul: Struktur Generator (Upsample + Conv2d Tanpa ConvTranspose2d) & Conditioning Spasial pada Discriminator (Varian A vs Varian B)
-• Tautan Sesi Chat: [Sertakan tautan share link AI]
+• Tautan Sesi Chat: 
+- Claude : https://claude.ai/share/448920af-5a33-420c-86f8-95c72ac086b5
+- Gemini Argon : file markdown LLM_LOG.md dan LOG_INTERAKSI_LLM.md
 ```
 
 ### KRONOLOGI PROMPT & RESPONS:
@@ -134,7 +136,9 @@ LOG INTERAKSI LLM - KELOMPOK [FashionGAN]
 LOG INTERAKSI LLM - KELOMPOK [FashionGAN]
 • Tanggal Sesi: 21/10/2026
 • Target Modul: Loop Training cGAN, Inisialisasi Bobot BatchNorm, One-Sided Label Smoothing, & Checkpointing
-• Tautan Sesi Chat: [Sertakan tautan share link AI]
+• Tautan Sesi Chat: 
+- Claude : https://claude.ai/share/448920af-5a33-420c-86f8-95c72ac086b5
+- Gemini Argon : file markdown LLM_LOG.md dan LOG_INTERAKSI_LLM.md
 ```
 
 ### KRONOLOGI PROMPT & RESPONS:
@@ -198,7 +202,9 @@ LOG INTERAKSI LLM - KELOMPOK [FashionGAN]
 LOG INTERAKSI LLM - KELOMPOK [FashionGAN]
 • Tanggal Sesi: 22/10/2026
 • Target Modul: Evaluasi Kuantitatif 10.000 Gambar Generate, Perhitungan Fréchet Distance, & Optimasi Hyperparameter
-• Tautan Sesi Chat: [Sertakan tautan share link AI]
+• Tautan Sesi Chat: 
+- Claude : https://claude.ai/share/448920af-5a33-420c-86f8-95c72ac086b5
+- Gemini Argon : file markdown LLM_LOG.md dan LOG_INTERAKSI_LLM.md
 ```
 
 ### KRONOLOGI PROMPT & RESPONS:
@@ -256,7 +262,9 @@ LOG INTERAKSI LLM - KELOMPOK [FashionGAN]
 LOG INTERAKSI LLM - KELOMPOK [FashionGAN]
 • Tanggal Sesi: 23/10/2026
 • Target Modul: Pembuatan Web Demo Gradio, Debugging Reprodusibilitas RNG PyTorch (SIMD Box-Muller), & Penutupan Tunnel di Kaggle Batch
-• Tautan Sesi Chat: [Sertakan tautan share link AI]
+• Tautan Sesi Chat: 
+- Claude : https://claude.ai/share/448920af-5a33-420c-86f8-95c72ac086b5
+- Gemini Argon : file markdown LLM_LOG.md dan LOG_INTERAKSI_LLM.md
 ```
 
 ### KRONOLOGI PROMPT & RESPONS:
